@@ -5,6 +5,7 @@ test('can toPairs', (tt) => {
 
     let a: {[k: string]: boolean|string} = {a: false, b: 'bob'};
 
-    tt.deepEqual(toPairs(a), [['a', false], ['b', 'bob']]);
+    let result = toPairs(a);
+    tt.deepEqual(result, [['a', false], ['b', 'bob']]);
 
 });
